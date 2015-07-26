@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="vlash">
+<head>
+	<!-- LIBS CSS -->
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/fawsome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/libs/css/bootstrap-social.css">
+	<!-- LIBS JS -->
+	<script type="text/javascript" src="assets/libs/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/libs/js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="assets/libs/js/angular.min.js"></script>	
+	<script type="text/javascript" src="assets/libs/js/ui-bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/libs/js/angular-animate.min.js"></script>
+	<script type="text/javascript" src="assets/libs/js/angular-ui-router.min.js"></script>
+
+	<!-- MY CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+
+	<!-- MY SCRIPTS -->
+	<script type="text/javascript" src="components/main/app.js"></script>
+	<script type="text/javascript" src="components/shared/_directives.js"></script>
+	<script type="text/javascript" src="components/adds/_directives.js"></script>
+
+	<title>My website</title>
+</head>
+<body>
+	 <div ui-view="header"></div>
+	 <div ui-view="navigation"></div>
+
+	 <div class="row">
+	 	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+	 		<div class="container" ui-view="content"></div>
+	 	</div>
+	 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+	 		<div class="container-fluid" ui-view="adds">	 			
+	 		</div>
+	 	</div>
+	 </div>
+	
+	 <div ui-view="footer"></div>
+	 
+</body>
+</html>
