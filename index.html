@@ -19,25 +19,37 @@
 	<!-- MY SCRIPTS -->
 	<script type="text/javascript" src="components/main/app.js"></script>
 	<script type="text/javascript" src="components/shared/_directives.js"></script>
+
+	<script type="text/javascript" src="components/adds/_adds.module.js"></script>
 	<script type="text/javascript" src="components/adds/_directives.js"></script>
+
+	<script type="text/javascript" src="components/navigation/_nav.module.js"></script>
+	<script type="text/javascript" src="components/navigation/_controllers.js"></script>
+
+	<script type="text/javascript" src="components/articles/_articles.module.js"></script>
+	<script type="text/javascript" src="components/articles/_controllers.js"></script>
+	<script type="text/javascript" src="components/articles/_directives.js"></script>	
+
 
 	<title>My website</title>
 </head>
-<body>
-	 <div ui-view="header"></div>
-	 <div ui-view="navigation"></div>
+<body>	
+	<div ui-view="header"></div>
+	<div ui-view="navigation"></div>
 
-	 <div class="row">
-	 	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-	 		<div class="container" ui-view="content"></div>
-	 	</div>
-	 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-	 		<div class="container-fluid" ui-view="adds">	 			
-	 		</div>
-	 	</div>
-	 </div>
+
+	<div class="container-fluid main-container">
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+			<div class="container" ui-view="content"></div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="container-fluid" ui-view="adds">	 			
+			</div>
+		</div>
+	</div>
+
 	
-	 <div ui-view="footer"></div>
-	 
+	<div ui-view="footer"></div>
+
 </body>
 </html>

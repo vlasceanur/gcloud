@@ -1,10 +1,9 @@
-<div class="row navigation">
+<div class="navigation">
 <div class="container-fluid" full-h>
 	<div all-colls="12" full-h>
-		<button class="menu-button" full-h>Home</button>
+		<button ng-cloack class="menu-button" full-h ng-click="goToState(homeBtn.state)">{{homeBtn.title}}</button>
 		<div separator="50"></div>
-		<button class="menu-button" full-h>Articles</button>
-		<button class="menu-button" full-h>Usefull links</button>
+		<button class="menu-button" full-h ng-repeat="btn in otherBtns" ng-click="goToState(btn.state)">{{btn.title}}</button>		
 	</div>
 </div>
 </div>

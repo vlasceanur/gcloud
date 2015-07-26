@@ -1,0 +1,18 @@
+<div class="row">
+	<div all-colls="6">	
+		<article-thumbnail  ng-show="$even" ng-repeat="article in articles"
+			pic="{{article.pic}}"
+			description="{{article.description}}"
+			title="{{article.title}}"
+			link="{{article.link}}">
+		</article-thumbnail>	
+	</div>
+	<div all-colls="6">	
+		<article-thumbnail  ng-hide="$even" ng-repeat="article in articles"
+			pic="{{article.pic}}"
+			description="{{article.description}}"
+			title="{{article.title}}"
+			link="{{article.link}}">
+		</article-thumbnail>	
+	</div>
+</div>

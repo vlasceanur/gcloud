@@ -10,7 +10,7 @@ angular.module('shared.directives', [])
 				ele.addClass(colls.join(" "));
 			}
 		}		
-	}])
+	}])		
 	.directive('separator', [function(){
 		return {
 			restrict: 'A',

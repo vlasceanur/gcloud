@@ -9,7 +9,11 @@
 *[full-h]{
 	height:100%;
 }
-.ib, .logo, .share-group, .header .title {display: inline-block;}
+body{
+	background: #355;
+}
+.fl {float: left;}
+.ib, .logo, .share-group, .title {display: inline-block;}
 .header .title{
 	font-family: TitleFont;
 	font-size: 2em;	
@@ -69,4 +73,7 @@
     border: 1px solid black;
     max-width: 300px;
     display: inline-block;
+}
+.main-container{
+	padding-top:30px;
 }
