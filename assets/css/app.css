@@ -9,6 +9,15 @@
 *[full-h]{
 	height:100%;
 }
+.txt-white{
+	color:white;
+}
+.unselectable{
+    -moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+  	cursor: default;
+}
 body{
 	background: #355;
 }
